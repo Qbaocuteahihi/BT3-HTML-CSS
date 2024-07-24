@@ -1,59 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CART GIOI THIEU BAN THAN</title>
+    <title>Giới thiệu bản thân</title>
     <style>
-      h2 {
-        color: blue;
-        font-weight: 10;
-        font-style: italic;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
       }
-      #NQB {
-        font-size: small;
-        background-color: rgb(115, 235, 127);
+      .khung-chinh {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(4, 77, 224, 0.1);
+      }
+      .dau-trang {
+        display: flex;
+        align-items: center;
+      }
+      .dau-trang img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+      .thong-tin-chinh h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .thong-tin-chinh h2 {
+        margin: 5px 0;
+        font-size: 18px;
+        color: #4a07f2;
+      }
+      .chi-tiet-thong-tin h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+      }
+      .chi-tiet-thong-tin div {
+        margin-bottom: 10px;
+      }
+      .chi-tiet-thong-tin div span {
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <div class="Qbao">
-      <div id="NQB" class="CART">
-        <h1
-          style="
-            color: brown;
-            font-weight: 5;
-            font-style: bold;
-            font-family: Arial, Helvetica, sans-serif;
-          "
-        >
-          Giới Thiệu Bản Thân
-        </h1>
-        <h2>Họ và Tên: <span>Nguyễn Quốc Bảo</span></h2>
-        <h2>Ngày Sinh: 22/04/2004</h2>
-        <h2>
-          Địa Chỉ: 19/2, đường số 11, phường Bình Trưng Tây, TP. Thủ Đức, TP. Hồ
-          Chí Minh
-        </h2>
-        <h2>
-          <a href="https://www.facebook.com/profile.php?id=100035774342936"
-            >Click vào để mở FB tui</a
-          >
-        </h2>
-        <h2>Sở Thích:</h2>
-        <ul style="color: rgb(221, 5, 218)">
-          <li>Nghe nhạc</li>
-          <li>Coi Youtube</li>
-          <li>Ăn</li>
-        </ul>
-        <h2>Ảnh tui nè:</h2>
-        <img
-          style="width: 300px; height: 300px; border-radius: 360px"
-          src="./bao.jpg"
-          alt="img Qbao"
-        />
+    <div class="khung-chinh">
+      <div class="dau-trang">
+        <img src="./bao.jpg" alt="Quốc Bảo" />
+        <div class="thong-tin-chinh">
+          <h1>Quốc Bảo</h1>
+          <h2>Thông tin tài khoản</h2>
+        </div>
+      </div>
+      <div class="chi-tiet-thong-tin">
+        <h2>Thông tin cá nhân</h2>
+        <div><span>Giới tính:</span> Nam</div>
+        <div><span>Ngày sinh:</span> 22 tháng 04, 2004</div>
+        <div><span>Điện thoại:</span> +84 912 504 917</div>
       </div>
     </div>
   </body>
